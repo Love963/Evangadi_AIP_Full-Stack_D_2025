@@ -1,0 +1,39 @@
+.Bglue {
+  background-color: rgb(10, 96, 109);
+  text-align: center;
+}
+#puppy_banner {
+  /* display: none; */
+}
+
+/* .puppy-1 {
+  display: inline-block;
+}
+
+.missing_puppy {
+  display: inline-block;
+}
+
+.puppy-2 {
+  display: inline-block;
+} */
+
+.puppies-section {
+  display: flex;
+}
+.more_puppies {
+  text-align: center;
+}
+.missing_puppy {
+  background-color: red;
+  text-align: center;
+  /* position: relative;
+  top: 100px; */
+}
+/* .puppy-3 {
+  display: inline-block;
+}
+
+.puppy-4 {
+  display: inline-block;
+} */
