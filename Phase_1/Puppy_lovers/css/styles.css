@@ -1,6 +1,12 @@
-.Bglue {
+* {
+  margin: 0;
+  padding: 0;
+}
+.Bblue {
   background-color: rgb(10, 96, 109);
   text-align: center;
+  color: white;
+  padding: 20px 0;
 }
 #puppy_banner {
   /* display: none; */
@@ -20,13 +26,29 @@
 
 .puppies-section {
   display: flex;
+  padding: 40px;
+  width: 960px;
+}
+.container {
+  width: 1000px;
+  margin: 15px auto;
 }
 .more_puppies {
+  margin-top: 20px;
   text-align: center;
+  font-size: 40px;
+}
+.vertical-ppupies-1 {
+  margin-right: 30px;
+}
+.vertical-ppupies-2 {
+  margin-left: 30px;
 }
 .missing_puppy {
   background-color: red;
   text-align: center;
+  padding: 20px;
+  margin: 0 1%;
   /* position: relative;
   top: 100px; */
 }
@@ -37,3 +59,22 @@
 .puppy-4 {
   display: inline-block;
 } */
+
+.puppy-1,
+.puppy-2,
+.missing_puppy {
+  width: 25%;
+}
+
+.puppy-1 img,
+.puppy-2 img,
+.missing_puppy img {
+  width: 100%;
+}
+img {
+  max-width: 100%;
+}
+footer.Bblue {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
