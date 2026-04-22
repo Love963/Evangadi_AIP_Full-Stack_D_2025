@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.center {
+  background-color: blue;
+  text-align: center;
+  color: yellow;
+}
+
+.para-container p{
+  margin: 2%;
+}
+.image1 {
+  background-image: url(../images/puppy-1.jpg);
+}
+.image2 {
+  background-image: url(../images/puppy-2.jpg);
+}
+.all-images div {
+  height: 310px;
+  background-size: cover;
+  width: 308px;
+  margin: 2% auto;
+}
+
+/* ************************ *\
+/* MEDIA  QUERIES 1st Media Queries */
+/* For Laptops and Tablets */
+/* *********************** */
+@media (min-width: 700px) {
+  .para-container {
+    display: flex;
+  }
+  .p2 {
+    display: none;
+  }
+  .all-images {
+    display: flex;
+    width: 650px;
+    margin: 0 auto;
+  }
+  .image2 {
+    background-image: url(../images/cat.jpg);
+  }
+}
+/* MEDIA  QUERIES 1st Media Queries */
+@media (min-width: 1000px) {
+  .p2 {
+    display: block;
+  }
+  .para-container p {
+    background-color: green;
+    color: white;
+  }
+  .all-images {
+    width: 950px;
+  }
+  .para-container {
+    width: 950px;
+    margin: 0 auto;
+  }
+}

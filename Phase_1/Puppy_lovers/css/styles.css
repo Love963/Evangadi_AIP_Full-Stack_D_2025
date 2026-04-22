@@ -1,80 +1,118 @@
-* {
+/* CSS RESET */
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* GLOBAL STYLES */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .Bblue {
   background-color: rgb(10, 96, 109);
   text-align: center;
   color: white;
   padding: 20px 0;
 }
-#puppy_banner {
-  /* display: none; */
+
+footer.Bblue {
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
-/* .puppy-1 {
-  display: inline-block;
+
+/* BANNER */
+#puppy_banner img {
+  width: 100%;
 }
 
-.missing_puppy {
-  display: inline-block;
-}
 
-.puppy-2 {
-  display: inline-block;
-} */
-
+/* PUPPY SECTIONS */
 .puppies-section {
   display: flex;
-  padding: 40px;
-  width: 960px;
+  gap: 20px;
+  padding: 40px 0;
 }
-.container {
-  width: 1000px;
-  margin: 15px auto;
+
+.puppies-section > div {
+  flex: 1;
+  border-radius: 8px;
+  overflow: hidden;
 }
+
+/* MISSING PUPPY */
+.missing_puppy {
+  background-color: red;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+
+/* MORE PUPPIES TITLE */
 .more_puppies {
   margin-top: 20px;
   text-align: center;
   font-size: 40px;
 }
-.vertical-ppupies-1 {
-  margin-right: 30px;
-}
-.vertical-ppupies-2 {
-  margin-left: 30px;
-}
-.missing_puppy {
-  background-color: red;
-  text-align: center;
-  padding: 20px;
-  margin: 0 1%;
-  /* position: relative;
-  top: 100px; */
-}
-/* .puppy-3 {
-  display: inline-block;
+
+
+/* HOVER EFFECT (Top 1% UI) */
+.puppies-section img {
+  transition: transform 0.3s ease;
 }
 
-.puppy-4 {
-  display: inline-block;
-} */
-
-.puppy-1,
-.puppy-2,
-.missing_puppy {
-  width: 25%;
+.puppies-section img:hover {
+  transform: scale(1.05);
 }
 
-.puppy-1 img,
-.puppy-2 img,
-.missing_puppy img {
-  width: 100%;
+
+/* RESPONSIVE DESIGN */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .puppies-section {
+    flex-direction: column;
+  }
+
+  .more_puppies {
+    font-size: 30px;
+  }
 }
-img {
-  max-width: 100%;
-}
-footer.Bblue {
-  padding-top: 30px;
-  padding-bottom: 60px;
+
+/* Mobile */
+@media (max-width: 480px) {
+  .Bblue {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .more_puppies {
+    font-size: 24px;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
 }

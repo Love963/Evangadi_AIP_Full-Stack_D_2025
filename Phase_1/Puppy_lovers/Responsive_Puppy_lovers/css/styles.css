@@ -1,0 +1,33 @@
+body {
+  background-color: gold;
+}
+
+h1 {
+  font-size: 50px;
+  padding: 50px 0;
+  text-align: center;
+  color: purple;
+  background-color: blue;
+}
+@media (min-width: 500px) {
+  body {
+    background-color: red;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    background-color: aqua;
+    color: white;
+  }
+}
+@media (min-width: 980px) {
+  h1 {
+    background-color: indigo;
+  }
+}
+@media (min-width: 1040px) {
+  h1 {
+    background-color: yellow;
+  }
+}
